@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+.body{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #b4fff9, #9eb8ff, #b4bdf3, #a4cbff);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  font-family: "Quicksand";
+}
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+.btn-to-top{
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  position: fixed;
+  cursor: pointer;
+  font-size: 18px;
+}
+.menu{
+  padding: 5px;
+}
+.about, .main{
+  margin-top: 8rem;
+}
+.menu:hover{
+  background: #9eb8ff;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+.banner{
+  background: #0099ff;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+.banner .waves{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+.heading{
+  position: absolute;
+  top: 26%;
+  left: 23%;
+  color: white;
+  font-weight: bold;
+}
+.accordions{
+  border: 2px solid #0099ff;
+}
+
+@media screen and (max-width: 500px){
+  .heading{
+    left: 4%;
+    text-align: center;
+  }
+  img{
+    width: 100%;
+  }
+  
+}
